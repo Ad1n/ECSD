@@ -1,0 +1,22 @@
+# Editor files
+/.idea
+/.vscode
+/.emacs.desktop
+/.emacs.desktop.lock
+
+# Bundler config.
+/.bundle
+
+# All logfiles and tempfiles.
+/log
+/tmp
+
+# Default ruby version/gemset files
+/.ruby-version
+/.ruby-gemset
+
+# OS specific
+.DS_Store
+
+# Exports
+/export/*.yml
