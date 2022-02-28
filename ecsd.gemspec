@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.licenses    = ['MIT']
   s.authors     = ['Anton Shevtsov']
   s.email       = 'shevtsovav@bk.ru'
-  s.summary     = 'ECS(EC2 based) discovery'
+  s.summary     = 'ECS(EC2 model) discovery'
   s.description = 'Generate ec2 yaml config files to allow ECS cluster to be discovered by prometheus monitoring service'
 
   s.files       = Dir['CHANGELOG.md', 'LICENSE', 'README.md', 'lib/**/*', 'export']

@@ -3,7 +3,10 @@
 #     c.clusters = %w[cluster0 cluster1 cluster2]
 #     c.region = "aws_region_name"
 #     c.credentials = { AWS_ACCESS_KEY_ID: "ID", AWS_SECRET_ACCESS_KEY: "SECRET" }
-#     c.options = { export_path: 'dir/path/to/export_config/folder' }
+#     c.options = {
+#       export_path: 'dir/path/to/export_config/folder',
+#       timeout: 101
+#     }
 #     c.logger = Logger.new($stdout)
 #   end
 module ECSD
@@ -16,6 +19,13 @@ module ECSD
           payload[:AWS_ACCESS_KEY_ID],
           payload[:AWS_SECRET_ACCESS_KEY]
         ))
+      end
+
+      # @param payload [Hash] { export_path: 'path/to/folder', timeout: 0 }
+      def options=(payload)
+        payload[:export_path] ||= ECSD::DEFAULT_EXPORT_PATH
+        payload[:timeout] ||= 0
+        super(payload)
       end
 
       private
