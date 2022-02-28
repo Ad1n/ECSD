@@ -20,3 +20,6 @@
 
 # Exports
 /export/*.yml
+
+# Generated gem
+/*.gem

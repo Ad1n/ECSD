@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require 'ecsd/version'
+require_relative 'lib/ecsd/version'
 
 Gem::Specification.new do |s|
   s.name        = 'ECSD'
-  s.version     = ECSD::VERSION
+  s.version     = ::ECSD::VERSION
   s.licenses    = ['MIT']
   s.authors     = ['Anton Shevtsov']
   s.email       = 'shevtsovav@bk.ru'
