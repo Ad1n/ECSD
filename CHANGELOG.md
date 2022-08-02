@@ -1,3 +1,7 @@
+# 1.0.1
+
+- fix mapped response instead of 'each'
+
 # 1.0
 
 - `ECSD.start(cycle: false)` now returns hash payload `{ tasks_count: tasks_count, cluster: cluster }`
