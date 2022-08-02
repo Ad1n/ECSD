@@ -14,7 +14,7 @@ module ECSD
 
   # @info one discovery cycle invocation
   def invoke!
-    config.clusters.each do |cluster|
+    config.clusters.map do |cluster|
       core(cluster).handle!
     end
   end
