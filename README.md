@@ -12,16 +12,16 @@ First create AWS IAM user with roles for describe and list.
 
 Then add gem to your service:
 ```ruby
-gem 'ecsd'
+gem 'ECSD', '~> 1.0'
 ```
 Or install directly:
 ```
-$ gem install ecsd
+$ gem install ECSD
 ```
 
 To start discover ECS cluster define config:
 ```ruby
-require 'ecsd'
+require 'ECSD'
 
 ECSD.config do |c|
   c.clusters = %w[cluster_name]
@@ -50,7 +50,7 @@ ECSD.start
 By default ECSD continuously discovering defined clusters and save templates into
 corresponded files.
 
-Also it's possible to start only ony cycle discover:
+Also it's possible to start only one cycle discover:
 ```ruby
 ECSD.start(cycle: false)
 ```
