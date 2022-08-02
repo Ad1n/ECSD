@@ -10,6 +10,7 @@ Gem::Specification.new do |s|
   s.email       = 'shevtsovav@bk.ru'
   s.summary     = 'ECS(EC2 model) discovery'
   s.description = 'Generate ec2 yaml config files to allow ECS cluster to be discovered by prometheus monitoring service'
+  s.homepage    = 'https://github.com/Ad1n/ECSD'
 
   s.files       = Dir['CHANGELOG.md', 'LICENSE', 'README.md', 'lib/**/*', 'export']
 
