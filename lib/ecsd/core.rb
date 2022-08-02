@@ -54,6 +54,11 @@ module ECSD
           Tasks in cluster: #{r.count}
           Finished at: #{Time.now}
         TEXT
+
+        {
+          cluster: cluster,
+          tasks_count: r.count
+        }
       end
     end
   end

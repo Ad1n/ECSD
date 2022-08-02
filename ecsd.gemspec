@@ -15,6 +15,6 @@ Gem::Specification.new do |s|
 
   s.required_ruby_version = '>= 2.4.0'
 
-  s.add_dependency 'aws-sdk-ec2', ['~> 1.298']
-  s.add_dependency 'aws-sdk-ecs', ['~> 1.95']
+  s.add_dependency 'aws-sdk-ec2', ['~> 1.294']
+  s.add_dependency 'aws-sdk-ecs', ['~> 1.94']
 end
