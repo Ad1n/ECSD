@@ -15,7 +15,7 @@ module ECSD
       "labels" => {
         "task_id" => task_id,
         "task_definition_name" => task_definition_name,
-        "task_revision" => task_revision.to_i,
+        "task_revision" => task_revision,
         "cluster_name" => cluster_name,
         "container_name" => container_name,
         "instance_id" => instance_id,

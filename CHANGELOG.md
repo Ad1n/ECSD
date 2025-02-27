@@ -1,3 +1,7 @@
+# 1.1.1
+
+- fix task_revision value type
+
 # 1.1.0
 
 - add json export file format support
