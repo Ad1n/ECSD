@@ -12,7 +12,7 @@ First create AWS IAM user with roles for describe and list.
 
 Then add gem to your service:
 ```ruby
-gem 'ECSD', '~> 1.0.1'
+gem 'ECSD', '~> 1.1.0'
 ```
 Or install directly:
 ```

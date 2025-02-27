@@ -1,4 +1,6 @@
 # frozen_string_literal: true
+require 'json'
+require 'yaml'
 
 require 'aws-sdk-ecs'
 require 'aws-sdk-ec2'

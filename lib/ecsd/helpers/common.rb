@@ -2,8 +2,15 @@ module ECSD
   module Helpers
     module Common
       def write_to_file(cluster, data, path = ECSD.config.options[:export_path] || DEFAULT_EXPORT_PATH)
-        File.open("#{path}/#{cluster.downcase}.yml", 'w') do |f|
-          f.write(data.join)
+        format = ECSD.config.options[:export_format]
+        content = case format
+                  when ECSD::Constants::FORMATS[:yml]
+                    YAML.dump(data)
+                  when ECSD::Constants::FORMATS[:json]
+                    data.to_json
+                  end
+        File.open("#{path}/#{cluster.downcase}.#{format}", 'w') do |f|
+          f.write(content)
         end
       end
 
