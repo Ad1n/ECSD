@@ -1,3 +1,7 @@
+# 1.1.0
+
+- add json export file format support
+
 # 1.0.1
 
 - fix mapped response instead of 'each'

@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.name        = 'ECSD'
   s.version     = ::ECSD::VERSION
   s.licenses    = ['MIT']
-  s.authors     = ['Anton Shevtsov']
+  s.authors     = ['Anton Shevtsov', 'Anton Kotenko']
   s.email       = 'shevtsovav@bk.ru'
   s.summary     = 'ECS(EC2 model) discovery'
   s.description = 'Generate ec2 yaml config files to allow ECS cluster to be discovered by prometheus monitoring service'

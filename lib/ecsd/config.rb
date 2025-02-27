@@ -24,6 +24,10 @@ module ECSD
       # @param payload [Hash] { export_path: 'path/to/folder', timeout: 0 }
       def options=(payload)
         payload[:export_path] ||= ECSD::DEFAULT_EXPORT_PATH
+        payload[:export_format] ||= ECSD::Constants::DEFAULT_EXPORT_FORMAT
+        unless [Constants::FORMATS[:json], Constants::FORMATS[:yml]].include?(payload[:export_format])
+          raise UnknownExportFormatError, "Invalid export format: #{payload[:export_format]}"
+        end
         payload[:timeout] ||= 0
         super(payload)
       end
